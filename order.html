@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Galleria Example</title>
+    <meta charset="utf-8">
+    <title>Galleria Classic Theme</title>
+    <style>
+
+        /* Demo styles */
+        html,body{background:#222;margin:0;}
+        body{border-top:4px solid #000;}
+        .content{color:#777;font:12px/1.4 "helvetica neue",arial,sans-serif;width:480px;margin:20px auto;}
+        h1{font-size:22px;font-weight:normal;color:#ddd;margin:0;}
+        p{font-size:18px;margin:0 0 20px}
+        a {color:#22BCB9;text-decoration:none;}
+        .galleria-info-description a {color: #bbb;}
+        .cred{margin-top:20px;font-size:11px;}
+
+        /* This rule is read by Galleria to define the gallery height: */
+        #galleria{height:640px}
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    <script src="../../galleria.js"></script>
+  </head>
+
+  <body>
+    <!-- All of your content -->
+    <div class="content">
+
+        <h1>京東使用指南</h1>
+        <p>之 訂單篇</p>
+        
+        
+        
+
+    <div id="galleria">
+        <img src="../../../jd/order/00.png"
+            data-title="點擊慾購商品">
+        <img src="../../../jd/order/01.png"
+            data-description="1. 上下滑動則顯示更多信息。&lt;br/&gt;2. 若想購買該商品，點擊右下角-加入購物車。"
+            data-title="進入商品信息頁面">
+        <img src="../../../jd/order/02.png"
+            data-description="1. 選好種類后點擊下方確定按鈕。&lt;br/&gt;2. 若想取消購買，點擊手機上的返回按鈕。&lt;br/&gt;3. 請注意，并非所有京東商品都有種類供您挑選。"
+            data-title="選擇購買種類">
+        <img src="../../../jd/order/03.png"
+            data-title="信息輸入后，左上角顯示用戶名，則登入成功，如圖所示">
+        <img src="../../../jd/order/04.png"
+            data-title="點擊右下角-我的">
+        <img src="../../../jd/order/05.png"
+            data-title="點擊右下角-我的">
+        <img src="../../../jd/order/06.png"
+            data-title="點擊右下角-我的">
+    </div></div>
+
+
+    <script>
+        $(function() {
+            // Load the classic theme
+            Galleria.loadTheme('galleria.classic.js');
+    
+            // Initialize Galleria
+            Galleria.run('#galleria');
+        });
+        </script>
+</body>
+</html>
